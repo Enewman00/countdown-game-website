@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sumstone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    img, svg { display: block; max-width: 100%; }
+
+    /* Custom properties */
+    :root {
+      --bg:           #F5F0E8;
+      --surface:      #EFE8DC;
+      --overlay:      #E6DDD0;
+      --ink:          #2E2820;
+      --ink-muted:    #6B6055;
+      --ink-subtle:   #9E9285;
+      --accent:       #4A66A0;
+      --accent-light: #D4896A;
+      --accent-dark:  #8F3D20;
+      --error:        #B5232A;
+
+      --sp-1: 4px;
+      --sp-2: 8px;
+      --sp-3: 16px;
+      --sp-4: 24px;
+      --sp-5: 32px;
+      --sp-6: 48px;
+
+      --r-card:   20px;
+      --r-btn:    14px;
+      --r-pill:   100px;
+
+      --font-display: 'Instrument Serif', serif;
+      --font-body:    'DM Sans', sans-serif;
+      --font-mono:    'JetBrains Mono', monospace;
+    }
+
+    /* Base */
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    code, .mono {
+      font-family: var(--font-mono);
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 var(--sp-4);
+    }
+
+    /* Nav */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--overlay);
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      gap: var(--sp-3);
+    }
+
+    .nav-brand {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: var(--sp-3);
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--ink-muted);
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    /* Sections */
+    section {
+      padding: var(--sp-6) 0;
+    }
+
+    section + section {
+      border-top: 1px solid var(--overlay);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--overlay);
+      padding: var(--sp-4) 0;
+      text-align: center;
+      font-size: 0.8125rem;
+      color: var(--ink-muted);
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .nav-links {
+        gap: var(--sp-2);
+      }
+      .nav-links a {
+        font-size: 0.8125rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <span class="nav-brand">Sumstone</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <!-- Task 2: Hero / App Info -->
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <!-- Task 3: Privacy Policy -->
+      </div>
+    </section>
+
+    <section id="terms">
+      <div class="container">
+        <!-- Task 4: Terms & Conditions -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <!-- Task 5: Contact -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2024 Sumstone. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
