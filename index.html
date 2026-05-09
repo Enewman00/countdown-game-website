@@ -121,6 +121,7 @@
     /* Sections */
     section {
       padding: var(--sp-6) 0;
+      scroll-margin-top: 56px;
     }
 
     section + section {
@@ -243,13 +244,69 @@
       margin-bottom: 0;
     }
 
+    /* Contact */
+    .contact-section {
+      text-align: center;
+    }
+
+    .contact-heading {
+      font-size: clamp(2rem, 6vw, 3rem);
+      margin-bottom: var(--sp-3);
+      color: var(--ink);
+    }
+
+    .contact-desc {
+      color: var(--ink-muted);
+      max-width: 440px;
+      margin: 0 auto var(--sp-5);
+    }
+
+    .contact-pill {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: var(--sp-3) var(--sp-5);
+      border-radius: var(--r-pill);
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+
+    .contact-pill:hover {
+      opacity: 0.85;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .contact-note {
+      margin-top: var(--sp-3);
+      font-size: 0.8125rem;
+      color: var(--ink-subtle);
+    }
+
     /* Responsive */
     @media (max-width: 480px) {
       .nav-links {
         gap: var(--sp-2);
       }
       .nav-links a {
-        font-size: 0.8125rem;
+        font-size: 0.75rem;
+      }
+      .nav-brand {
+        font-size: 1.1rem;
+      }
+      nav .container {
+        height: auto;
+        min-height: 56px;
+        padding-top: var(--sp-2);
+        padding-bottom: var(--sp-2);
+        flex-wrap: wrap;
+        gap: var(--sp-2);
+      }
+      section {
+        scroll-margin-top: 72px;
       }
     }
   </style>
@@ -400,14 +457,19 @@
 
     <section id="contact">
       <div class="container">
-        <!-- Task 5: Contact -->
+        <div class="contact-section">
+          <h2 class="contact-heading">Contact Us</h2>
+          <p class="contact-desc">Have a question, found a bug, or just want to say hello? We'd love to hear from you.</p>
+          <a href="mailto:sproutalarm@gmail.com" class="contact-pill">sproutalarm@gmail.com</a>
+          <p class="contact-note">Tapping the link will open your email app.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      &copy; 2024 Sumstone. All rights reserved.
+      &copy; 2026 Sumstone. All rights reserved.
     </div>
   </footer>
 
