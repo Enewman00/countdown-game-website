@@ -210,6 +210,39 @@
       font-size: 1.375rem;
     }
 
+    /* Policy sections */
+    .policy-heading {
+      font-size: clamp(2rem, 6vw, 3rem);
+      margin-bottom: var(--sp-2);
+      color: var(--ink);
+    }
+
+    .policy-date {
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      color: var(--ink-subtle);
+      margin-bottom: var(--sp-5);
+    }
+
+    .policy-block {
+      margin-bottom: var(--sp-5);
+    }
+
+    .policy-block h3 {
+      font-size: 1.25rem;
+      margin-bottom: var(--sp-2);
+      color: var(--ink);
+    }
+
+    .policy-block p {
+      color: var(--ink-muted);
+      margin-bottom: var(--sp-3);
+    }
+
+    .policy-block p:last-child {
+      margin-bottom: 0;
+    }
+
     /* Responsive */
     @media (max-width: 480px) {
       .nav-links {
@@ -268,13 +301,100 @@
 
     <section id="privacy">
       <div class="container">
-        <!-- Task 3: Privacy Policy -->
+        <h2 class="policy-heading">Privacy Policy</h2>
+        <p class="policy-date">Effective date: May 9, 2026</p>
+
+        <div class="policy-block">
+          <h3>Overview</h3>
+          <p>Sumstone is a math puzzle game. We do not collect, store, or sell any personal data. This policy explains the third-party services the app uses and what data they may handle on your device.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Advertising — Google AdMob</h3>
+          <p>Sumstone uses <strong>Google AdMob</strong> to display ads. AdMob may collect device identifiers, IP address, and usage data to serve and measure ads. This is handled entirely by Google; Sumstone does not receive or store this data.</p>
+          <p>Learn more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></p>
+        </div>
+
+        <div class="policy-block">
+          <h3>In-App Purchases — RevenueCat</h3>
+          <p>Sumstone uses <strong>RevenueCat</strong> to manage optional subscriptions. RevenueCat may process transaction data (e.g. purchase receipts) to validate entitlements. Sumstone does not receive your payment details.</p>
+          <p>Learn more: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Data We Collect</h3>
+          <p>We do not collect any personal data — no names, email addresses, location, or analytics — beyond what AdMob and RevenueCat require to function. No accounts are required to use the app.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Children's Privacy</h3>
+          <p>Sumstone does not knowingly collect personal information from children under 13. If you believe a child has provided personal information through our app, please contact us so we can address it.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Changes to This Policy</h3>
+          <p>We may update this policy from time to time. Any changes will be posted on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Contact</h3>
+          <p>Questions about this policy? Email us at <a href="mailto:sproutalarm@gmail.com">sproutalarm@gmail.com</a>.</p>
+        </div>
       </div>
     </section>
 
     <section id="terms">
       <div class="container">
-        <!-- Task 4: Terms & Conditions -->
+        <h2 class="policy-heading">Terms &amp; Conditions</h2>
+        <p class="policy-date">Effective date: May 9, 2026</p>
+
+        <div class="policy-block">
+          <h3>Acceptance of Terms</h3>
+          <p>By downloading or using Sumstone, you agree to be bound by these Terms &amp; Conditions. If you do not agree, please do not use the app.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>The Service</h3>
+          <p>Sumstone is a free math puzzle game available on iOS and Android. The app includes optional in-app subscriptions that remove ads and may unlock additional features. Core gameplay is available at no cost.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Subscriptions &amp; Purchases</h3>
+          <p>Optional subscriptions are processed through Apple App Store or Google Play. Subscription management, billing, and cancellations are handled by those platforms and by <strong>RevenueCat</strong>. We do not process or store payment information directly.</p>
+          <p>Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription in your device's account settings.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Third-Party Services</h3>
+          <p>Sumstone integrates with the following third-party services, each governed by their own terms and policies:</p>
+          <p><strong>Google AdMob</strong> — provides advertising in the free version of the app. Subject to <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Google Terms of Service</a>.</p>
+          <p><strong>RevenueCat</strong> — manages in-app subscription entitlements. Subject to <a href="https://www.revenuecat.com/terms" target="_blank" rel="noopener">RevenueCat Terms of Service</a>.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>No Warranty</h3>
+          <p>Sumstone is provided "as is" and "as available" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the app will be error-free, uninterrupted, or free of harmful components.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Limitation of Liability</h3>
+          <p>To the fullest extent permitted by law, Sumstone and its developers shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of or inability to use the app, even if advised of the possibility of such damages.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Governing Law</h3>
+          <p>These Terms are governed by the laws of the jurisdiction in which the developer is located, without regard to its conflict of law provisions.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Changes to These Terms</h3>
+          <p>We may update these Terms from time to time. Any changes will be posted on this page with an updated effective date. Continued use of the app after changes constitutes acceptance of the revised Terms.</p>
+        </div>
+
+        <div class="policy-block">
+          <h3>Contact</h3>
+          <p>Questions about these Terms? Email us at <a href="mailto:sproutalarm@gmail.com">sproutalarm@gmail.com</a>.</p>
+        </div>
       </div>
     </section>
 
